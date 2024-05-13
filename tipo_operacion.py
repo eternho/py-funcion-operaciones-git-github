@@ -1,5 +1,6 @@
 import os
 
+# Función que devuelve la opción de operación elegida por el usuario
 def switch_case(opcion):
     return {
         1: "Suma",
@@ -8,6 +9,7 @@ def switch_case(opcion):
         4: "División"
     }.get(opcion, "Opción no válida, adiós!")
 
+# Función que recibe tres argumentos y realiza el cálculo de operación elegida
 def operacion (opcion_elegida, n1, n2):
     match opcion_elegida:
         case "Suma":
